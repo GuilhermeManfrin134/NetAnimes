@@ -1,0 +1,205 @@
+
+/*-------------------------Zerando o CSS e Definição de Variáveis-----------------------*/ 
+
+:root{
+    --fundo: #001219;
+    --azul: #184e77;
+    --azulClaro: #a8dadc;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(var(--fundo), var(--azul), var(--fundo));
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', Times, serif;
+    color: white;
+}
+
+/*----------------------------------CABEÇALHO------------------------------------------ */
+
+
+header .container{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    position: absolute;
+}
+
+header .logo{
+    color: var(--azul);
+    font-family: 'Arial Black';
+    font-size: 40px;
+    text-decoration: none;
+    text-shadow: 2px 2px var(--azulClaro);
+}
+
+header nav {
+    margin-bottom: 5px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--azulClaro);
+    margin: 10px;
+    
+    text-shadow: 2px 1px var(--azul);
+}
+
+header nav a:hover{
+    color: white;
+}
+
+/*-------------------------Anime Principal--------------------------------------*/
+
+.anime-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50),rgba(0, 0, 0, .5)100%), url('/img/FMAB.jpg');
+    border-radius: 15px;
+
+    margin: 5px;
+    height: 520px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.anime-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.anime-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .2s ease all;
+}
+
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.container{
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.anime-principal .container{
+    width: 60%;
+}
+
+/*----------------------------------Carrossel de Imagens--------------------------------------*/
+
+.anime{
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.box-anime{
+    width: 100%;
+    height: 300px;
+    display: block;
+    border-radius: 15px;
+}
+
+.box-anime:hover{
+    border: solid 2px white;
+}
+
+.carrosel-animes{
+    margin: 5px;
+}
+
+.titulo-carrosel{
+    color: var(--azulClaro);
+    font-size: 160%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px;
+}
+
+/*---Descrição dos Animes--*/
+
+.itens-anime{
+    display: block;
+    justify-content: center;
+    
+    margin-top: 200px;
+}
+
+.itens-anime .botao i{
+    font-size: 170%;
+    margin: auto;
+}
+
+.descricao-anime{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+
+    opacity: 0;
+    transition: opacity .15s ease-in-out;
+}
+
+.descricao-anime:hover{
+    opacity: 1;
+    transition: opacity .1s ease-in-out;
+}
+
+.nome-anime{
+    font-size: 100%;
+    text-align: center;
+    padding-top: 10%;
+    text-shadow: 2px 2px black;
+    color: var(--azulClaro);
+    height: 0%;
+}
+
+.botoes-anime{
+    display: flex;
+    justify-content: center;
+    margin-left: 8%;
+}
+
+.botoes-anime .botao{
+    border: 1px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
